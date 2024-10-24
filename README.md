@@ -22,10 +22,10 @@
 
 # TUTORIAL : 
 
-<!-- To add the chat suggestions on your register command do like this :  -->
+## To add the chat suggestions on your register command do like this :
 
     RegisterCommand('me', function(source, args, rawCommand)
 
     TriggerEvent('chat:addSuggestion', '/me', 'Just a /me', {
-    { name = 'me', help = 'Write what do you want.' }
+      { name = 'me', help = 'Write what do you want.' }
     })
