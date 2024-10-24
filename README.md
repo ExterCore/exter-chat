@@ -26,6 +26,8 @@
 
     RegisterCommand('me', function(source, args, rawCommand)
 
+## Then, add this trigger bellow in every RegisterCommand
+
     TriggerEvent('chat:addSuggestion', '/me', 'Just a /me', {
       { name = 'me', help = 'Write what do you want.' }
     })
