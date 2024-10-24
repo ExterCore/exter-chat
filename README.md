@@ -10,6 +10,7 @@
 - /ooc (Global OOC)
 - /clear (Clear Chat (only client))
 - /me
+- /do
 
 # Here is a short tutorial how to use our chatmessages with our channels/categories
 
