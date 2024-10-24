@@ -1,0 +1,2 @@
+# exter-chat
+CHAT SYSTEM LIKE NOPIXEL 4.0
