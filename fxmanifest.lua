@@ -8,7 +8,7 @@ description "EXTER-CHAT NOPIXEL DESIGN 4.0"
 
 version "1.0"
 
-ui_page 'nui/dist/index.html'
+ui_page 'web/dist/index.html'
 
 client_scripts {
   "client/*.lua"
