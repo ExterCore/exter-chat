@@ -23,8 +23,9 @@ shared_script {
   "shared/*.lua"
 }
 
-export "isPed"
-
 files {
     "web/dist/**/*",
 }
+
+export "isPed"
+export "IsPedNearCoords"
