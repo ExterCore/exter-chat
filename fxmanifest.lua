@@ -6,7 +6,7 @@ author "sobing"
 
 description "EXTER-CHAT NOPIXEL DESIGN 4.0"
 
-version "1.0"
+version "1.1"
 
 ui_page 'web/dist/index.html'
 
@@ -22,6 +22,8 @@ server_scripts {
 shared_script {
   "shared/*.lua"
 }
+
+export "isPed"
 
 files {
     "web/dist/**/*",
