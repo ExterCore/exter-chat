@@ -1,6 +1,10 @@
 # exter-chat
 ## CHAT SYSTEM LIKE NOPIXEL 4.0
 
+## NEW VERSION OUT NOW WE FIXED STATUS CHECK PLAYER
+
+[IsPed](https://github.com/CtrlAltDelete4413/IsPed)
+
 # PREVIEW
 ![prew](https://github.com/user-attachments/assets/4bcf733a-b0e2-4b55-a686-0b25dd795d7b)
 
