@@ -278,6 +278,25 @@ function oe(e, t, n, s = I, i) {
   );
 }
 
+function handleCommand(message) {
+      if (message.startsWith("/police")) {
+          addChatMessage("[POLICE] Bantuan sedang dalam perjalanan!");
+      } else if (message.startsWith("/ambulance")) {
+          addChatMessage("[AMBULANCE] Ambulans telah dipanggil ke lokasi Anda!");
+      } else {
+          addChatMessage(message);
+      }
+  }
+
+function addChatMessage(text) {
+      const messageElement = document.createElement("div");
+      messageElement.classList.add("message");
+      messageElement.textContent = text;
+      chatMessages.appendChild(messageElement);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+  }
+});
+
 function z(e) {
   if (e.state === 0) return;
   if (e.state === Z) return ee(e);
