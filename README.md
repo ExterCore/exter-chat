@@ -5,7 +5,17 @@
 
 [IsPed](https://github.com/CtrlAltDelete4413/IsPed)
 
-# PREVIEW
+## UPDATE V1.4
+- DISPATCH FOR POLICE
+- DISPATCH FOR AMBULANCE/EMS
+- FIXED CHAT INPUT & ADD CONTAINER MESSAGE FOR DISPATCH IN CSS
+- ADD HANDLER COMMAND FOR DISPATCH AND HOSPITAL
+
+# PREVIEW v1.4
+![UPDATE](https://github.com/user-attachments/assets/44afc89a-6833-493a-b248-148326d8158b)
+
+
+# PREVIEW v1.3
 ![prew](https://github.com/user-attachments/assets/4bcf733a-b0e2-4b55-a686-0b25dd795d7b)
 
 [video](https://streamable.com/mwsh29)
