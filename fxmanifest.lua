@@ -6,7 +6,7 @@ author "sobing"
 
 description "EXTER-CHAT NOPIXEL DESIGN 4.0"
 
-version "1.3"
+version "1.4"
 
 ui_page 'web/dist/index.html'
 
