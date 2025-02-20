@@ -294,8 +294,7 @@ function addChatMessage(text) {
       messageElement.textContent = text;
       chatMessages.appendChild(messageElement);
       chatMessages.scrollTop = chatMessages.scrollHeight;
-  }
-});
+}
 
 function z(e) {
   if (e.state === 0) return;
