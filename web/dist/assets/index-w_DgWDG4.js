@@ -279,14 +279,15 @@ function oe(e, t, n, s = I, i) {
 }
 
 function handleCommand(message) {
-      if (message.startsWith("/police")) {
-          addChatMessage("[POLICE] Bantuan sedang dalam perjalanan!");
-      } else if (message.startsWith("/ambulance")) {
-          addChatMessage("[AMBULANCE] Ambulans telah dipanggil ke lokasi Anda!");
-      } else {
-          addChatMessage(message);
-      }
+  if (message.startsWith("/police")) {
+      emitNet("sendPoliceMessage");  // Kirim event ke server
+  } else if (message.startsWith("/ambulance")) {
+      emitNet("sendAmbulanceMessage"); // Kirim event ke server
+  } else {
+      addChatMessage(message);
   }
+}
+
 
 function addChatMessage(text) {
       const messageElement = document.createElement("div");
@@ -294,7 +295,7 @@ function addChatMessage(text) {
       messageElement.textContent = text;
       chatMessages.appendChild(messageElement);
       chatMessages.scrollTop = chatMessages.scrollHeight;
-}
+  }
 
 function z(e) {
   if (e.state === 0) return;
