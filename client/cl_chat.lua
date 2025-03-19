@@ -125,21 +125,6 @@ function chatMessage(author, color, text, channel, isAdminMessage)
   --   TriggerEvent("phone:addnotification", author, text)
   --   return
   -- end
-RegisterCommand('police', function(source, args, rawCommand)
-    local message = table.concat(args, " ")
-    if message == "" then
-        message = "Need police assistance!"
-    end
-    TriggerEvent("chatMessage", "DISPATCH", 3, message, "dispatch")
-end, false)
-
-RegisterCommand('ambulance', function(source, args, rawCommand)
-    local message = table.concat(args, " ")
-    if message == "" then
-        message = "Need medical assistance!"
-    end
-    TriggerEvent("chatMessage", "HOSPITAL", 2, message, "hospital")
-end, false)
 
   local matchChannel = checkRoutedMessage(_author)
   
