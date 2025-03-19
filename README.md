@@ -3,6 +3,14 @@
 
 ## NEW VERSION OUT NOW WE FIXED STATUS CHECK PLAYER
 
+## UPDATE V1.5
+
+- remove client dispatch | https://github.com/ExterCore/exter-chat/commit/cd9f324591833a787becdab12b6f93b63afb37a1
+- adding server side diaptach police & ambulance | https://github.com/ExterCore/exter-chat/commit/4714778727503e4d7d1c71d5dd7d3766f38e1f5a
+- javascript fixed double open and close brackets | https://github.com/ExterCore/exter-chat/commit/5e379e2f06a40d02f60c332acf8ee1c3984bfbe2
+
+[DOWNLOAD](https://github.com/ExterCore/exter-chat/releases/tag/exter-chat-v1.5)
+
 [IsPed](https://github.com/CtrlAltDelete4413/IsPed)
 
 ## UPDATE V1.4
