@@ -1,3 +1,5 @@
+QBCore = exports['qb-core']:GetCoreObject() -- Pastikan menggunakan QBCore
+
 RegisterServerEvent('chat:init')
 RegisterServerEvent('chat:addTemplate')
 RegisterServerEvent('chat:addMessage')
@@ -55,6 +57,56 @@ AddEventHandler('onServerResourceStart', function(resName)
 end)
 
 -- Here you can WORK other parts of the code i do not recommend you to change something !
+
+RegisterCommand('police', function(source, args, rawCommand)
+    local Player = QBCore.Functions.GetPlayer(source)
+    if not Player or Player.PlayerData.job.name ~= "police" then
+        TriggerClientEvent('chatMessage', source, "[SYSTEM]", {255, 0, 0}, "Anda bukan polisi!")
+        return
+    end
+
+    local message = "Bantuan sedang dalam perjalanan!"
+    if #args > 0 then
+        message = table.concat(args, " ")
+    end
+
+    TriggerClientEvent('chatMessage', -1, "[DISPATCH]", {0, 153, 255}, message)
+end, false)
+
+RegisterCommand('ambulance', function(source, args, rawCommand)
+    local Player = QBCore.Functions.GetPlayer(source)
+    if not Player or Player.PlayerData.job.name ~= "ambulance" then
+        TriggerClientEvent('chatMessage', source, "[SYSTEM]", {255, 0, 0}, "Anda bukan ambulance!")
+        return
+    end
+
+    local message = "Bantuan sedang dalam perjalanan!"
+    if #args > 0 then
+        message = table.concat(args, " ")
+    end
+
+    TriggerClientEvent('chatMessage', -1, "[DISPATCH]", {0, 153, 255}, message)
+end, false)
+
+RegisterNetEvent("sendPoliceMessage")
+AddEventHandler("sendPoliceMessage", function()
+    TriggerClientEvent('chat:addMessage', -1, {
+        color = {0, 153, 255},
+        multiline = true,
+        args = {"DISPATCH", "Bantuan sedang dalam perjalanan!"}
+    })
+end)
+
+RegisterNetEvent("sendAmbulanceMessage")
+AddEventHandler("sendAmbulanceMessage", function()
+    TriggerClientEvent('chat:addMessage', -1, {
+        color = {255, 0, 0},
+        multiline = true,
+        args = {"HOSPITAL", "Ambulans telah dipanggil ke lokasi Anda!"}
+    })
+end)
+
+
 
 AddEventHandler('chat:init', function()
     refreshCommands(source)
